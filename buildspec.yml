@@ -11,7 +11,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 cp --recursive --acl public-read ./build s3://javabipe/
+      - aws s3 cp --recursive --acl public-read ./build s3://examteste/
 artifacts:
   files:
     - '**/*'
