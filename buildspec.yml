@@ -11,7 +11,7 @@ phases:
       - yarn build
   post_build:
     commands:
-      - aws s3 cp --recursive --acl public-read ./build s3://examteste/
+      - aws s3 cp --recursive --acl public-read ./build s3://vamosver/
 artifacts:
   files:
     - '**/*'
